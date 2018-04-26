@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - DRY notification boxes</title>
+  
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <style>
+      
+[class^=notification] {
+  margin: 4px;
+  float:left;
+  position:relative ;
+  padding: 0px 15px 0px 20px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+[class^=notification] p {
+  padding-left: 18px;
+  margin: 5px 0;
+}
+
+[class^=notification] > p:first-child:before {
+  font-family: FontAwesome;
+  position: absolute;
+  font-size:24px;
+  left: 10px;
+  margin: -2px;
+}
+
+.notificationNote {
+  background-color: #D5EEF8;
+  color: #2183A5;
+}
+
+.notificationTip {
+  background-color: #DDEFD7;
+  color: #308935;
+}
+
+.notificationExample {
+  background-color: #DDDDDD;
+  color: #2B3139;
+}
+
+.notificationWarning {
+  background-color: #F2DEDB;
+  color: #992222;
+}
+
+
+/* Icon choice for notification divs */
+
+.notificationNote > p:first-child:before {
+  /* "i" in a circle */
+  content: "\f05a";
+}
+
+
+.notificationTip > p:first-child:before {
+  /* Hand pointing right */
+  content: "\f00c";
+}
+
+
+.notificationExample > p:first-child:before {
+  /* Binoculars */
+  content: "\f05e";
+}
+
+.notificationWarning > p:first-child:before {
+  /* Exclamation mark in triangle */
+  content: "\f00d";
+}
+
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <div class="notificationNote">
+  <p>Dalam proses
+  </div></div>
+<div class="notificationTip">
+	<p>Berhasil.</p>
+</div>
+<div class="notificationExample">
+	<p>Belum di konfirmasi</p>
+</div>
+<div class="notificationWarning">
+	<p> Gagal!!</p>
+</div>
+  
+  
+  
+  
+  
+
+</body>
+
+</html>
+ 
